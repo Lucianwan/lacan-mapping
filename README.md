@@ -63,3 +63,20 @@
   - [ ] 圣状的修补流程：分析结束时的“知道怎么做（*Savoir y faire*）”——不再消除症状，而是与症状的享乐模式达成拓扑学妥协。
 
 > 💡 **如何参与贡献：** 如果你对以上某个特定模块的流向、公式或拓扑结构有独特的解构思路，欢迎通过 Issue 提交你的草图或想法，让我们共同为迷茫的主体提供这叶“人工肺”。
+>
+> ## 📊 核心图谱展示
+
+### 1. 镜像阶段与自我的异化 (The Mirror Stage)
+
+这是关于新生儿如何在镜子中看到“完满的自身形象”，却在象征界中陷入终身异化的流程解构：
+
+```mermaid
+graph TD
+    A[破碎的身体 Corps morcelé] -->|注视镜中镜像| B(理想我 Ideal-Ich)
+    B -->|误认 Méconnaissance| C{大他者 l'Autre 的认可}
+    C -->|Yes: 语言符号内化| D[符号界主体: 被语言割裂的自我 $]
+    C -->|No: 象征化失败| E[实在界的焦虑 / 精神病机制机制]
+    
+    style B fill:#f9f,stroke:#333,stroke-width:2px
+    style D fill:#bbf,stroke:#333,stroke-width:2px
+    style E fill:#fbb,stroke:#333,stroke-width:2px
