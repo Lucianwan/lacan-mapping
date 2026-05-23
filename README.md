@@ -7,7 +7,7 @@
 ### 👁️ 模块一：主体的拓扑奠基（The Topological Foundation）
 
 - [/] **1.1 想象界的捕获与异化（The Imaginary Capture）**
-  - [/] 镜像阶段（Mirror Stage）：自我的原型（Urbild）与主体的首度分裂。
+  - [/] [镜像阶段（Mirror Stage）](./docs/01_mirror_stage.md)：自我的原型（Urbild）与主体的首度分裂。
   - [ ] 互易主义（Transitivism）与侵凌性：电影/日常中的“你死我活”镜像戏剧（解构《搏击俱乐部》式双生）。
   - [ ] 偏侧忽略与幻肢疼痛：身体形象（Body Image）与躯体图式（Body Schema）的精神病理学分化。
 - [ ] **1.2 符号界的坐标锚定（The Symbolic Matrix）**
