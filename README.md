@@ -35,6 +35,7 @@
 
 ---
 
+
 ### 🩸 模块三：部分客体与无意识享乐（Partial Objects & Jouissance）
 
 - [ ] **3.1 对象a（Objet a）的四种临床算法表现**
@@ -120,3 +121,52 @@ graph TD
     style AlterEgo fill:#d9f,stroke:#333,stroke-width:2px,rx:10,ry:10, color:#000
     style ClinB fill:#f9d,stroke:#333,stroke-width:1px, color:#000
     style Flow fill:#eee,stroke:#999,stroke-width:1px, color:#000
+
+
+```
+
+
+
+  ### 1.2 符号界的坐标锚定 (The Symbolic Matrix)
+
+本章节解构无意识的语言学结构。核心在于 L图 的四角拓扑关系，以及能指对主体的绝对优先性。
+
+```mermaid
+graph TD
+    %% 定义节点
+    S_Barred["$ (被割裂的主体)"]
+    Other_A["A (大他者)"]
+    ego_a_prime["a' (自我)"]
+    object_a["a (小他者)"]
+
+    %% L图的对角线与轴线
+    S_Barred -.->|无意识的言说| Other_A
+    Other_A -.->|主体的真理| S_Barred
+    
+    ego_a_prime <==>|想象的轴线: 捕获/异化/墙壁| object_a
+
+    %% 压抑关系
+    subgraph L_Schema [L图: 四角迷局]
+        S_Barred
+        Other_A
+        ego_a_prime
+        object_a
+    end
+
+    %% 能指公式 (Primacy of Signifier)
+    subgraph Signifier_Logic [能指算法机制]
+        formula["S (能指) / s (所指)"]
+        metonymy["换喻 (Metonymy): 欲望的滑动"]
+        metaphor["隐喻 (Metaphor): 症状的凝聚"]
+    end
+
+    %% 连接
+    Other_A -->|提供能指库| Signifier_Logic
+    Signifier_Logic -->|重组| S_Barred
+
+    %% 样式
+    style S_Barred fill:#fff,stroke:#333,stroke-width:2px
+    style Other_A fill:#fff,stroke:#333,stroke-width:2px
+    style Signifier_Logic fill:#f4f0e6,stroke:#3c4043,stroke-width:1px
+    style ego_a_prime fill:#bbf,stroke:#333
+    style object_a fill:#bbf,stroke:#333
