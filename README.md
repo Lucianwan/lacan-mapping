@@ -66,17 +66,57 @@
 >
 > ## 📊 核心图谱展示
 
-### 1. 镜像阶段与自我的异化 (The Mirror Stage)
+## 👁️ 想象界的捕获与异化：拓扑矩阵解构
 
-这是关于新生儿如何在镜子中看到“完满的自身形象”，却在象征界中陷入终身异化的流程解构：
+此图谱将路线图 1.1 中的三个子问题——镜像认同、侵凌互易主义以及躯体图式的精神病理学分化——整合为一个统一的想象界逻辑网络。
 
 ```mermaid
 graph TD
-    A[破碎的身体 Corps morcelé] -->|注视镜中镜像| B(理想我 Ideal-Ich)
-    B -->|误认 Méconnaissance| C{大他者 l'Autre 的认可}
-    C -->|Yes: 语言符号内化| D[符号界主体: 被语言割裂的自我 $]
-    C -->|No: 象征化失败| E[实在界的焦虑 / 精神病机制机制]
+    %% 实在的基底 (The Real Substrate)
+    S_R[实在肉体 Body in the Real] --- B_Sch(躯体图式 Body Schema: 神经生物学)
     
-    style B fill:#f9f,stroke:#333,stroke-width:2px
-    style D fill:#bbf,stroke:#333,stroke-width:2px
-    style E fill:#fbb,stroke:#333,stroke-width:2px
+    %% 镜像阶段的奠基性动作 (Foundation)
+    B_Sch ==>|6-18个月/注视镜中| M_Im[镜像/理想我 Mirror Image / Ideal-Eich]
+    M_Im -->|Misrecognize / 误认| Ego[自我原型 Urbild: 想象的完满]
+    
+    %% 主体的首度分裂 ($)
+    Ego ==>|诞生同时产生| Sub_S[被割裂的主体 $: 异化的开始]
+    A[大他者 A] -.->|语言授名/认可| M_Im
+    A -.->|切断| S_R
+    
+    %% 临床延伸 A: Transitivism & Aggressivity (Fight Club)
+    subgraph ClinA [1.1 互易性戏剧: 你死我活]
+        Ego <-->|Ego/alter ego confusion| AlterEgo(小他者/双生/泰勒)
+    end
+    
+    %% 临床延伸 B: Psychopathology (Phantoms)
+    subgraph ClinB [1.1 躯体病理学分化: 分裂与疼痛]
+        B_Img(身体形象 Body Image: 想象的完整) ---|Disconnected from| B_Sch
+    end
+    
+    %% 连接各子图
+    Ego -->|投射形成| AlterEgo
+    Ego -->|即为| B_Img
+    
+    %% 流程图流向补充
+    subgraph Flow [整体演变路径]
+        dir[1. 认同] ==> Ego
+        dir[2. 分裂] ==> Sub_S
+        dir[3. 攻击] ==> AlterEgo
+        dir[4. 病理] ==> ClinB
+    end
+    
+    %% 节点样式设计 (Styling for depth and visual distinction)
+    style S_R fill:#fbb,stroke:#333,stroke-width:2px,stroke-dasharray: 5 5, color:#000
+    style B_Sch fill:#fbb,stroke:#333,stroke-width:2px,color:#000
+    
+    style M_Im fill:#bbf,stroke:#333,stroke-width:1px,rx:10,ry:10, color:#000
+    style Ego fill:#bbf,stroke:#333,stroke-width:3px,rx:10,ry:10, color:#000
+    style B_Img fill:#bbf,stroke:#333,stroke-width:1px,rx:10,ry:10, color:#000
+    
+    style Sub_S fill:#fff,stroke:#333,stroke-width:2px,rx:10,ry:10, color:#000
+    style A fill:#fff,stroke:#333,stroke-width:2px,color:#000
+    
+    style AlterEgo fill:#d9f,stroke:#333,stroke-width:2px,rx:10,ry:10, color:#000
+    style ClinB fill:#f9d,stroke:#333,stroke-width:1px, color:#000
+    style Flow fill:#eee,stroke:#999,stroke-width:1px, color:#000
